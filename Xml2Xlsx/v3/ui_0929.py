@@ -1,0 +1,277 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file '0929.ui'
+##
+## Created by: Qt User Interface Compiler version 6.3.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QLabel, QLineEdit, QMainWindow,
+    QPushButton, QSizePolicy, QStatusBar, QWidget)
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(510, 343)
+        font = QFont()
+        font.setFamilies([u"KOTRA_BOLD"])
+        font.setBold(True)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color :rgb(255, 255, 255)")
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.xmlPath = QLineEdit(self.centralwidget)
+        self.xmlPath.setObjectName(u"xmlPath")
+        self.xmlPath.setGeometry(QRect(50, 160, 361, 41))
+        palette = QPalette()
+        brush = QBrush(QColor(0, 0, 0, 216))
+        brush.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        brush1 = QBrush(QColor(249, 249, 249, 255))
+        brush1.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Active, QPalette.Button, brush1)
+        brush2 = QBrush(QColor(1, 1, 1, 216))
+        brush2.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Active, QPalette.Text, brush2)
+        palette.setBrush(QPalette.Active, QPalette.Base, brush1)
+        palette.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush3 = QBrush(QColor(65, 65, 65, 63))
+        brush3.setStyle(Qt.SolidPattern)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush3)
+#endif
+        brush4 = QBrush(QColor(255, 255, 255, 255))
+        brush4.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Inactive, QPalette.WindowText, brush4)
+        palette.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette.setBrush(QPalette.Inactive, QPalette.Text, brush4)
+        palette.setBrush(QPalette.Inactive, QPalette.Base, brush1)
+        palette.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush5 = QBrush(QColor(255, 255, 255, 63))
+        brush5.setStyle(Qt.SolidPattern)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush5)
+#endif
+        palette.setBrush(QPalette.Disabled, QPalette.WindowText, brush5)
+        palette.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette.setBrush(QPalette.Disabled, QPalette.Text, brush5)
+        palette.setBrush(QPalette.Disabled, QPalette.Base, brush1)
+        palette.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush5)
+#endif
+        self.xmlPath.setPalette(palette)
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Flex"])
+        font1.setKerning(True)
+        font1.setStyleStrategy(QFont.PreferDefault)
+        self.xmlPath.setFont(font1)
+        self.xmlPath.setMouseTracking(True)
+        self.xmlPath.setTabletTracking(False)
+#if QT_CONFIG(tooltip)
+        self.xmlPath.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.xmlPath.setStatusTip(u"")
+#endif // QT_CONFIG(statustip)
+#if QT_CONFIG(whatsthis)
+        self.xmlPath.setWhatsThis(u"")
+#endif // QT_CONFIG(whatsthis)
+#if QT_CONFIG(accessibility)
+        self.xmlPath.setAccessibleName(u"")
+#endif // QT_CONFIG(accessibility)
+        self.xmlPath.setAutoFillBackground(False)
+        self.xmlPath.setStyleSheet(u"border-radius : 7px;\n"
+"background : rgb(249, 249, 249);\n"
+"border : 1px solid rgb(231, 231, 231);\n"
+"padding-left : 10px; ")
+        self.xmlPath.setInputMask(u"")
+        self.xmlPath.setText(u"")
+        self.xmlPath.setFrame(True)
+        self.xmlPath.setReadOnly(True)
+        self.xmlPath.setPlaceholderText(u"*.xml (fcp 7 xml)")
+        self.xmlPath.setClearButtonEnabled(True)
+        self.xml_upload = QPushButton(self.centralwidget)
+        self.xml_upload.setObjectName(u"xml_upload")
+        self.xml_upload.setGeometry(QRect(370, 160, 91, 41))
+        font2 = QFont()
+        font2.setFamilies([u"SUIT"])
+        font2.setBold(True)
+        self.xml_upload.setFont(font2)
+        self.xml_upload.setCursor(QCursor(Qt.PointingHandCursor))
+#if QT_CONFIG(tooltip)
+        self.xml_upload.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.xml_upload.setStatusTip(u"")
+#endif // QT_CONFIG(statustip)
+#if QT_CONFIG(whatsthis)
+        self.xml_upload.setWhatsThis(u"")
+#endif // QT_CONFIG(whatsthis)
+#if QT_CONFIG(accessibility)
+        self.xml_upload.setAccessibleName(u"")
+#endif // QT_CONFIG(accessibility)
+        self.xml_upload.setStyleSheet(u"QPushButton {\n"
+"border-top-right-radius : 7px;\n"
+"border-bottom-right-radius: 7px;\n"
+"background : white;\n"
+"border : 1.3px solid rgb(213, 213, 213);\n"
+"color : rgb(147, 147, 147); \n"
+"}\n"
+"\n"
+"QPushButton:hover\n"
+"{\n"
+"   	color : rgb(91, 134, 255);\n"
+"	border :1.3px solid rgb(91, 134, 255);\n"
+"}")
+        self.start = QPushButton(self.centralwidget)
+        self.start.setObjectName(u"start")
+        self.start.setGeometry(QRect(200, 270, 101, 41))
+        self.start.setFont(font2)
+        self.start.setCursor(QCursor(Qt.PointingHandCursor))
+#if QT_CONFIG(tooltip)
+        self.start.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.start.setStatusTip(u"")
+#endif // QT_CONFIG(statustip)
+#if QT_CONFIG(whatsthis)
+        self.start.setWhatsThis(u"")
+#endif // QT_CONFIG(whatsthis)
+#if QT_CONFIG(accessibility)
+        self.start.setAccessibleName(u"")
+#endif // QT_CONFIG(accessibility)
+        self.start.setStyleSheet(u"QPushButton {border-radius: 7px;\n"
+"background : rgb(91, 134, 255);\n"
+"color : white; }\n"
+"\n"
+"QPushButton::hover {\n"
+"	background : rgb(71, 104, 200);\n"
+"}")
+        self.label = QLabel(self.centralwidget)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(40, 130, 101, 31))
+        font3 = QFont()
+        font3.setFamilies([u"Roboto Flex"])
+        font3.setPointSize(16)
+        font3.setBold(True)
+        self.label.setFont(font3)
+#if QT_CONFIG(tooltip)
+        self.label.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.label.setStatusTip(u"")
+#endif // QT_CONFIG(statustip)
+#if QT_CONFIG(whatsthis)
+        self.label.setWhatsThis(u"")
+#endif // QT_CONFIG(whatsthis)
+#if QT_CONFIG(accessibility)
+        self.label.setAccessibleName(u"")
+#endif // QT_CONFIG(accessibility)
+        self.label.setStyleSheet(u"font-weight : 600;\n"
+"color : black")
+        self.label.setAlignment(Qt.AlignCenter)
+        self.label_6 = QLabel(self.centralwidget)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(50, 31, 411, 51))
+        font4 = QFont()
+        font4.setFamilies([u"Roboto Flex"])
+        font4.setPointSize(32)
+        font4.setBold(True)
+        font4.setItalic(False)
+        self.label_6.setFont(font4)
+#if QT_CONFIG(tooltip)
+        self.label_6.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.label_6.setStatusTip(u"")
+#endif // QT_CONFIG(statustip)
+#if QT_CONFIG(whatsthis)
+        self.label_6.setWhatsThis(u"")
+#endif // QT_CONFIG(whatsthis)
+#if QT_CONFIG(accessibility)
+        self.label_6.setAccessibleName(u"")
+#endif // QT_CONFIG(accessibility)
+        self.label_6.setStyleSheet(u"font-weight : 900;\n"
+"color : black;")
+        self.label_6.setAlignment(Qt.AlignCenter)
+        self.label_8 = QLabel(self.centralwidget)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(50, 70, 411, 31))
+        font5 = QFont()
+        font5.setFamilies([u"Roboto Flex"])
+        font5.setPointSize(14)
+        font5.setBold(False)
+        self.label_8.setFont(font5)
+#if QT_CONFIG(tooltip)
+        self.label_8.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.label_8.setStatusTip(u"")
+#endif // QT_CONFIG(statustip)
+#if QT_CONFIG(whatsthis)
+        self.label_8.setWhatsThis(u"")
+#endif // QT_CONFIG(whatsthis)
+#if QT_CONFIG(accessibility)
+        self.label_8.setAccessibleName(u"")
+#endif // QT_CONFIG(accessibility)
+        self.label_8.setStyleSheet(u"color : gray;\n"
+"font-weight : 300;")
+        self.label_8.setAlignment(Qt.AlignCenter)
+        self.Done = QLabel(self.centralwidget)
+        self.Done.setObjectName(u"Done")
+        self.Done.setGeometry(QRect(230, 190, 261, 51))
+        font6 = QFont()
+        font6.setFamilies([u"Roboto Flex"])
+        self.Done.setFont(font6)
+#if QT_CONFIG(tooltip)
+        self.Done.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.Done.setStatusTip(u"")
+#endif // QT_CONFIG(statustip)
+#if QT_CONFIG(whatsthis)
+        self.Done.setWhatsThis(u"")
+#endif // QT_CONFIG(whatsthis)
+#if QT_CONFIG(accessibility)
+        self.Done.setAccessibleName(u"")
+#endif // QT_CONFIG(accessibility)
+        self.Done.setStyleSheet(u"color : green")
+        self.Done.setAlignment(Qt.AlignCenter)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.Done.raise_()
+        self.label.raise_()
+        self.xmlPath.raise_()
+        self.xml_upload.raise_()
+        self.start.raise_()
+        self.label_6.raise_()
+        self.label_8.raise_()
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"XML Coverter", None))
+        self.xml_upload.setText(QCoreApplication.translate("MainWindow", u"Upload", None))
+        self.start.setText(QCoreApplication.translate("MainWindow", u"Start", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"file upload", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"XML CONVERTER", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"xml to xlsx ,  just 1 click !", None))
+        self.Done.setText(QCoreApplication.translate("MainWindow", u"* \ubc14\ud0d5\ud654\uba74\uc5d0 xml_list.xlsx \uc0dd\uc131 \uc644\ub8cc", None))
+    # retranslateUi
+
